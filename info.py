@@ -20,7 +20,7 @@ API_ID = int(getenv("API_ID", ""))
 API_HASH = str(getenv("API_HASH", ""))
 BOT_TOKEN = str(getenv("BOT_TOKEN", ""))
 FORCE_SUB = os.environ.get("FORCE_SUB", "") 
-MONGO_DB = str(getenv("MONGO_DB", "mongodb+srv://replacewithyourmongodb:replacewithyourmongodb@cluster0.zi78j51.mongodb.net/?retryWrites=true&w=majority",))
+MONGO_DB = str(getenv("MONGO_DB", "",))
 DEF_CAP = str(
     getenv(
         "DEF_CAP",
