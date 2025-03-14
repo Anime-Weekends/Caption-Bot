@@ -33,11 +33,11 @@ Eg:- `/set_cap
     ABOUT_TXT = """<b><blockquote expandable>𝗔𝗕𝗢𝗨𝗧 𝗖𝗔𝗣𝗧𝗜𝗢𝗡 𝗙𝗢𝗡𝗧</blockquote>
 <blockquote>➢ ʙᴏʟᴅ ᴛᴇxᴛ
 
-☞ <b><code><b>{filename}</b></code></b>
+☞ <b><code> {filename} </code></b>
 
 ➢ sᴘᴏɪʟᴇʀ ᴛᴇxᴛ
 
-☞ <spoiler><code>{filename}</code></spoiler>
+☞ <spoiler><code> {filename} </code></spoiler>
 
 ➢ ʙʟᴏᴄᴋǫᴜᴏᴛᴇ ᴛᴇxᴛ
 
