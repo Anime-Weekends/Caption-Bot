@@ -25,7 +25,7 @@ async def strtCap(bot, message):
     )
     await message.reply_photo(
         photo=SILICON_PIC,
-        caption=f"<b><blockquote>🍁 Hᴇʟʟᴏ {message.from_user.mention} !</blockquote>\n<blockquote>ɪ ᴀᴍ ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ ᴡɪᴛʜ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.Fᴏʀ ᴍᴏʀᴇ ɪɴғᴏ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.</blockquote>\n<blockquote>Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ »<a href='https://t.me/EmitingStars_Botz'>Eᴍɪᴛɪɴɢ sᴛᴀʀs</blockquote></a></b>",
+        caption=f"<b><blockquote>🍁 Hᴇʟʟᴏ {message.from_user.mention} !</blockquote>\n<blockquote>ɪ ᴀᴍ ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ ᴡɪᴛʜ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.Fᴏʀ ᴍᴏʀᴇ ɪɴғᴏ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.</blockquote>\n<blockquote>Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ » <a href='https://t.me/EmitingStars_Botz'>Eᴍɪᴛɪɴɢ sᴛᴀʀs</blockquote></a></b>",
         reply_markup=keyboard
     )
 
