@@ -17,7 +17,7 @@ async def strtCap(bot, message):
                 InlineKeyboardButton("⤬ Kɪᴅɴᴀᴘᴘ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ⤬", url=f"https://t.me/Auto_Caption_Elite_Bot?startchannel=true")
             ],[
                 InlineKeyboardButton("Hᴇʟᴘ", callback_data="help"),
-                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about")
+                InlineKeyboardButton("Fᴏɴᴛ", callback_data="about")
             ],[
                 InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/EmitingStars_Botz"),
                 InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url=r"https://t.me/+HZuPVe0l-F1mM2Jl")
@@ -165,7 +165,7 @@ async def start(bot, query):
                 InlineKeyboardButton("⤬ Kɪᴅɴᴀᴘᴘ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ⤬", url=f"http://t.me/Auto_Caption_Elite_Bot?startchannel=true")
                 ],[
                 InlineKeyboardButton("Hᴇʟᴘ", callback_data="help"),
-                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about")
+                InlineKeyboardButton("Fᴏɴᴛ", callback_data="about")
             ],[
                 InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/EmitingStars_Botz"),
                 InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url=r"https://t.me/+HZuPVe0l-F1mM2Jl")
@@ -180,7 +180,7 @@ async def help(bot, query):
         text=script.HELP_TXT,
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton('About', callback_data='about')
+            InlineKeyboardButton('Fᴏɴᴛ', callback_data='about')
             ],[
             InlineKeyboardButton('↩ ʙᴀᴄᴋ', callback_data='start')
             ]]
