@@ -2,10 +2,9 @@ import os
 
 class script(object):
 
-    START_TXT = """<b>🍁 Hᴇʟʟᴏ {} !\n
-ɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ cʜᴀɴɴᴇʟ ᴀɴᴅ ᴇɴᴊᴏʏ
-
-‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/EmitingStars_Botz'>Eᴍɪᴛɪɴɢ sᴛᴀʀs </a></b>
+    START_TXT = """<b><blockquote>♥️ Hᴇʟʟᴏ {} !</blockquote>\n
+<blockquote>ɪ ᴀᴍ ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ cʜᴀɴɴᴇʟ ᴀɴᴅ ᴇɴᴊᴏʏ</blockquote>
+<blockquote>‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/EmitingStars_Botz'>Eᴍɪᴛɪɴɢ sᴛᴀʀs</blockquote></a></b>
 """
 
     HELP_TXT = """<blockquote>❗ 𝗔𝗹𝗲𝗿𝘁 ❗</blockquote>
@@ -30,45 +29,4 @@ Eg:- `/set_cap
 ⚙️ Size » {file_size}</blockquote>
 """
 
-    ABOUT_TXT = """<b><blockquote expandable>𝗔𝗕𝗢𝗨𝗧 𝗖𝗔𝗣𝗧𝗜𝗢𝗡 𝗙𝗢𝗡𝗧</blockquote>
-<blockquote>➢ ʙᴏʟᴅ ᴛᴇxᴛ
-
-☞ <b><code> {filename} </code></b>
-
-➢ sᴘᴏɪʟᴇʀ ᴛᴇxᴛ
-
-☞ <spoiler><code> {filename} </code></spoiler>
-
-➢ ʙʟᴏᴄᴋǫᴜᴏᴛᴇ ᴛᴇxᴛ
-
-☞ <blockquote>{filename}</blockquote>
-
-➢ ʙʟᴏᴄᴋǫᴜᴏᴛᴇ ᴇxᴘᴀɴᴅᴇᴅ ᴛᴇxᴛ
-
-☞ <blockquote expandable>{filename}</blockquote>
-
-➢ ɪᴛᴀʟɪᴄ ᴛᴇxᴛ
-
-☞ <i>{filename}</i>
-
-➢ ᴜɴᴅᴇʀʟɪɴᴇ ᴛᴇxᴛ
-
-☞ <u>{filename}</u>
-
-➢ sᴛʀɪᴋᴇ ᴛᴇxᴛ
-
-☞ <s>{filename}</s>
-
-➢ ᴍᴏɴᴏ ᴛᴇxᴛ
-
-☞ <code>{filename}</code>
-
-➢ ʜʏᴘᴇʟɪɴᴋ ᴛᴇxᴛ
-
-☞ <a href="https://t.me/Anime_Weekends">{filename}</a>
-
-➢ ᴘʀᴇ ᴛᴇxᴛ
-
-☞ <pre>
-{file_name}
-</pre></blockquote></b>"""
+    ABOUT_TXT = """<b><blockquote expandable></b>"""
