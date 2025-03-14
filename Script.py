@@ -29,4 +29,12 @@ Eg:- `/set_cap
 ⚙️ Size » {file_size}</blockquote>
 """
 
-    ABOUT_TXT = """<b><blockquote expandable></b>"""
+    ABOUT_TXT = """<b><blockquote>☆┌─┐  ─┐☆
+　│▒│ /▒/
+　│▒│/▒/
+　│▒ /▒/─┬─┐◯
+　│▒│▒|▒│▒│
+┌┴─┴─┐-┘─┘
+│▒┌──┘▒▒▒│◯
+└┐▒▒▒▒▒▒┌┘
+◯└┐▒▒▒▒┌</blockquote></b>"""
