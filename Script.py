@@ -8,10 +8,7 @@ class script(object):
 ‣ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/EmitingStars_Botz'>Eᴍɪᴛɪɴɢ sᴛᴀʀs </a></b>
 """
 
-    HELP_TXT = """a
-
-<blockquote>❗ 𝗔𝗹𝗲𝗿𝘁 ❗</blockquote>
-
+    HELP_TXT = """<blockquote>❗ 𝗔𝗹𝗲𝗿𝘁 ❗</blockquote>
 <blockquote expandable>• Aᴅᴅ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴡɪᴛʜ ғᴜʟʟ ᴀᴅᴍɪɴ ʀɪɢʜᴛs.
 • Usᴇ ᴄᴏᴍᴍᴀɴᴅ ɢɪᴠᴇ ʙᴇʟᴏᴡ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ.
 • Tʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴡᴏʀᴋ ɪɴ ᴄʜᴀɴɴᴇʟ.
@@ -34,14 +31,13 @@ Eg:- `/set_cap
 """
 
     ABOUT_TXT = """<b><blockquote expandable>𝗔𝗕𝗢𝗨𝗧 𝗖𝗔𝗣𝗧𝗜𝗢𝗡 𝗙𝗢𝗡𝗧</blockquote>
+<blockquote>➢ ʙᴏʟᴅ ᴛᴇxᴛ
 
-<blockquote expandable>➢ ʙᴏʟᴅ ᴛᴇxᴛ
-
-☞ <b>{filename}</b>
+☞ <b><code>{filename}</code></b>
 
 ➢ sᴘᴏɪʟᴇʀ ᴛᴇxᴛ
 
-☞ <spoiler>{filename}</spoiler>
+☞ <spoiler><code>{filename}</code></spoiler>
 
 ➢ ʙʟᴏᴄᴋǫᴜᴏᴛᴇ ᴛᴇxᴛ
 
