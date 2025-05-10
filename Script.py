@@ -16,7 +16,7 @@ class script(object):
 •> /set_cap - Sᴇᴛ Nᴇᴡ Cᴀᴘᴛɪᴏɴ Iɴ ʏᴏᴜʀ Cʜᴀɴɴᴇʟ
 •> /del_cap - Dᴇʟᴇᴛᴇ Yᴏᴜʀ Cᴀᴘᴛɪᴏɴ</blockquote>
 
-<blockquote expandable>𝗙𝗢𝗥𝗠𝗔𝗧</blockquote>
+<pre>𝗙𝗢𝗥𝗠𝗔𝗧</pre>
 <blockquote expandable>`{file_name}` = Oʀɪɢɪɴᴀʟ Fɪʟᴇ Nᴀᴍᴇ
 `{file_size}` = Oʀɪɢɪɴᴀʟ Fɪʟᴇ Sɪᴢᴇ 
 `{language}` = Lᴀɴɢᴜᴀɢᴇ Oғ Fɪʟᴇ Nᴀᴍᴇ
