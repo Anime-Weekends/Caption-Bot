@@ -18,7 +18,7 @@ ADMIN = int(getenv("ADMIN", "6429532957"))
 SILICON_PIC = os.environ.get("SILICON_PIC", "https://i.ibb.co/nshhg1Zp/photo-2025-02-27-10-15-04-7481728210955141136.jpg")
 API_ID = int(getenv("API_ID", "28744454"))
 API_HASH = str(getenv("API_HASH", "debd37cef0ad1a1ce45d0be8e8c3c5e7"))
-BOT_TOKEN = str(getenv("BOT_TOKEN", "7733520743:AAElc3eBrpjd41SeVbUU20hQ9EBQiY0YR1I"))
+BOT_TOKEN = str(getenv("BOT_TOKEN", "7733520743:AAG0HLnBXKQEqz9RC2v-MaSM88qi9UeVMJs"))
 FORCE_SUB = os.environ.get("FORCE_SUB", "EmitingStars_Botz") 
 MONGO_DB = str(getenv("MONGO_DB", "mongodb+srv://NewData:NewData@cluster0.bctax.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",))
 DEF_CAP = str(
