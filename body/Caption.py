@@ -7,6 +7,12 @@ import re
 from pyrogram.errors import FloodWait
 from pyrogram.types import *
 
+# ========================================                               
+#             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
+#                                        
+#            === PrinceRexy ===                                          
+# ========================================
+
 @Client.on_message(filters.command("start") & filters.private)
 async def strtCap(bot, message):
     user_id = int(message.from_user.id)
@@ -29,11 +35,23 @@ async def strtCap(bot, message):
         reply_markup=keyboard
     )
 
+# ========================================                               
+#             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
+#                                        
+#            === PrinceRexy ===                                          
+# ========================================
+
 @Client.on_message(filters.private & filters.user(ADMIN)  & filters.command(["total_users"]))
 async def all_db_users_here(client,message):
     silicon = await message.reply_text("Please Wait....")
     silicon_botz = await total_user()
     await silicon.edit(f"Tᴏᴛᴀʟ Usᴇʀ :- `{silicon_botz}`")
+
+# ========================================                               
+#             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
+#                                        
+#            === PrinceRexy ===                                          
+# ========================================
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
@@ -67,12 +85,24 @@ async def broadcast(bot, message):
                 await asyncio.sleep(t.x)
         await silicon.edit(f"<u>ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ</u>\n\n• ᴛᴏᴛᴀʟ ᴜsᴇʀs: {tot}\n• sᴜᴄᴄᴇssғᴜʟ: {success}\n• ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs: {blocked}\n• ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs: {deactivated}\n• ᴜɴsᴜᴄᴄᴇssғᴜʟ: {failed}")
 
+# ========================================                               
+#             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
+#                                        
+#            === PrinceRexy ===                                          
+# ========================================
+
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command("restart"))
 async def restart_bot(b, m):
     silicon = await b.send_message(text="**🔄 𝙿𝚁𝙾𝙲𝙴𝚂𝚂𝙴𝚂 𝚂𝚃𝙾𝙿𝙴𝙳. 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶...**", chat_id=m.chat.id)       
     await asyncio.sleep(3)
     await silicon.edit("**✅️ 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳. 𝙽𝙾𝚆 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙼𝙴**")
     os.execl(sys.executable, sys.executable, *sys.argv)
+
+# ========================================                               
+#             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
+#                                        
+#            === PrinceRexy ===                                          
+# ========================================
 
 @Client.on_message(filters.command("set_cap") & filters.channel)
 async def setCap(bot, message):
@@ -91,6 +121,12 @@ async def setCap(bot, message):
     else:
         await addCap(chnl_id, caption)
         return await message.reply(f"Yᴏᴜʀ Nᴇᴡ Cᴀᴘᴛɪᴏɴ Is: {caption}")
+        
+# ========================================                               
+#             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
+#                                        
+#            === PrinceRexy ===                                          
+# ========================================
 
 @Client.on_message(filters.command("del_cap") & filters.channel)
 async def delCap(_, msg):
@@ -114,6 +150,12 @@ def extract_language(default_caption):
 def extract_year(default_caption):
     match = re.search(r'\b(19\d{2}|20\d{2})\b', default_caption)
     return match.group(1) if match else None
+
+# ========================================                               
+#             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
+#                                        
+#            === PrinceRexy ===                                          
+# ========================================
 
 @Client.on_message(filters.channel)
 async def reCap(bot, message):
@@ -155,6 +197,12 @@ def get_size(size):
         i += 1
         size /= 1024.0
     return "%.2f %s" % (size, units[i])
+
+# ========================================                               
+#             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
+#                                        
+#            === PrinceRexy ===                                          
+# ========================================
 
 @Client.on_callback_query(filters.regex(r'^start'))
 async def start(bot, query):
