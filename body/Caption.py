@@ -8,7 +8,6 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import *
 import asyncio
 import random
-from pyrogram.types import ChatAction
 
 # ========================================                               
 #             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
@@ -18,23 +17,21 @@ from pyrogram.types import ChatAction
 
 @Client.on_message(filters.command("start") & filters.private)
 async def strtCap(bot, message):
-    # Welcome animation and sticker logic
     welcome_text = "<i><blockquote>Wᴇʟᴄᴏᴍᴇ, ʙᴀʙʏ… ɪ’ᴠᴇ ʙᴇᴇɴ ᴄʀᴀᴠɪɴɢ ʏᴏᴜʀ ᴘʀᴇsᴇɴᴄᴇ ғᴇᴇʟs ᴘᴇʀғᴇᴄᴛ ɴᴏᴡ ᴛʜᴀᴛ ʏᴏᴜ’ʀᴇ ʜᴇʀᴇ.</blockquote></i>"
     stickers = [
         "CAACAgUAAxkBAAEOXBhoCoKZ76jevKX-Vc5v5SZhCeQAAXMAAh4KAALJrhlVZygbxFWWTLw2BA"
     ]
 
-    await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
+    await bot.send_chat_action(message.chat.id, "typing")
     msg = await message.reply_text(welcome_text)
     await asyncio.sleep(0.1)
     await msg.edit_text("<b><i><pre>Sᴛᴀʀᴛɪɴɢ...</pre></i></b>")
     await asyncio.sleep(0.1)
     await msg.delete()
 
-    await bot.send_chat_action(message.chat.id, ChatAction.CHOOSE_STICKER)
+    await bot.send_chat_action(message.chat.id, "choose_sticker")
     await message.reply_sticker(random.choice(stickers))
 
-    # Main logic
     user_id = int(message.from_user.id)
     await insert(user_id)
 
@@ -54,10 +51,13 @@ async def strtCap(bot, message):
 
     await message.reply_photo(
         photo=SILICON_PIC,
-        caption=f"<b><blockquote>♥️ Hᴇʟʟᴏ {message.from_user.mention} !</blockquote>\n<blockquote>ɪ ᴀᴍ ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ ᴡɪᴛʜ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ. Fᴏʀ ᴍᴏʀᴇ ɪɴғᴏ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ, ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.</blockquote>\n<blockquote>Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ » <a href='https://t.me/EmitingStars_Botz'>Eᴍɪᴛɪɴɢ sᴛᴀʀs</a></blockquote></b>",
+        caption=f"<b><blockquote>♥️ Hᴇʟʟᴏ {message.from_user.mention} !</blockquote>\n"
+                f"<blockquote>ɪ ᴀᴍ ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ ᴡɪᴛʜ ᴄᴜsᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ. "
+                f"Fᴏʀ ᴍᴏʀᴇ ɪɴғᴏ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ, ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.</blockquote>\n"
+                f"<blockquote>Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ » <a href='https://t.me/EmitingStars_Botz'>Eᴍɪᴛɪɴɢ sᴛᴀʀs</a></blockquote></b>",
         reply_markup=keyboard
     )
-
+    
 # ========================================                               
 #             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
 #                                        
