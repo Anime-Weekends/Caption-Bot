@@ -8,6 +8,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import *
 import asyncio
 import random
+from pyrogram.types import InputMediaPhoto
 
 # ========================================                               
 #             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
@@ -245,17 +246,19 @@ async def start(bot, query):
 
 @Client.on_callback_query(filters.regex(r'^help'))
 async def help(bot, query):
-    await query.message.edit_text(
-        text=script.HELP_TXT,
-        reply_markup=InlineKeyboardMarkup(
-            [[
-            InlineKeyboardButton('Fᴏɴᴛ', callback_data='about')
-            ],[
-            InlineKeyboardButton('↩ ʙᴀᴄᴋ', callback_data='start')
-            ]]
+    await query.message.edit_media(
+        media=InputMediaPhoto(
+            media="https://i.ibb.co/fYMxrHQ0/photo-2025-04-29-16-45-17-7498777191010795536.jpg",  # Replace with your actual image URL or file_id
+            caption=script.HELP_TXT,
+            parse_mode="html"
         ),
-        disable_web_page_preview=True    
-)
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton('Fᴏɴᴛ', callback_data='about')],
+                [InlineKeyboardButton('↩ ʙᴀᴄᴋ', callback_data='start')]
+            ]
+        )
+    )
 
 
 @Client.on_callback_query(filters.regex(r'^about'))
