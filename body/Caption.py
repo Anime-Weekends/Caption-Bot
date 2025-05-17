@@ -226,29 +226,33 @@ def get_size(size):
 #            === PrinceRexy ===                                          
 # ========================================
 
+from pyrogram.types import InputMediaPhoto
+
 @Client.on_callback_query(filters.regex(r'^start'))
 async def start(bot, query):
-    await query.message.edit_text(
-        text=script.START_TXT.format(query.from_user.mention),  
-        reply_markup=InlineKeyboardMarkup(
-            [[
-                InlineKeyboardButton("⤬ Kɪᴅɴᴀᴘᴘ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ⤬", url=f"http://t.me/Auto_Caption_Elite_Bot?startchannel=true")
-                ],[
-                InlineKeyboardButton("Hᴇʟᴘ", callback_data="help"),
-                InlineKeyboardButton("Fᴏɴᴛ", callback_data="about")
-            ],[
-                InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/EmitingStars_Botz"),
-                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url=r"https://t.me/+HZuPVe0l-F1mM2Jl")
-            ]]
+    await query.message.edit_media(
+        media=InputMediaPhoto(
+            media="",  # Replace with your own image
+            caption=script.START_TXT.format(query.from_user.mention),
+            parse_mode="html"
         ),
-        disable_web_page_preview=True
-)
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton("⤬ Kɪᴅɴᴀᴘᴘ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ⤬", url="http://t.me/Auto_Caption_Elite_Bot?startchannel=true")],
+                [InlineKeyboardButton("Hᴇʟᴘ", callback_data="help"),
+                 InlineKeyboardButton("Fᴏɴᴛ", callback_data="about")],
+                [InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url="https://t.me/EmitingStars_Botz"),
+                 InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/+HZuPVe0l-F1mM2Jl")]
+            ]
+        )
+    )
+
 
 @Client.on_callback_query(filters.regex(r'^help'))
 async def help(bot, query):
     await query.message.edit_media(
         media=InputMediaPhoto(
-            media="https://i.ibb.co/fYMxrHQ0/photo-2025-04-29-16-45-17-7498777191010795536.jpg",  # Replace with your actual image URL or file_id
+            media="https://i.ibb.co/fYMxrHQ/photo-2025-04-29-16-45-17-7498777191010795536.jpg",
             caption=script.HELP_TXT,
             parse_mode="html"
         ),
@@ -263,16 +267,16 @@ async def help(bot, query):
 
 @Client.on_callback_query(filters.regex(r'^about'))
 async def about(bot, query):
-    await query.message.edit_text(
-        text=script.ABOUT_TXT,
-        reply_markup=InlineKeyboardMarkup(
-            [[
-            InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ❓', callback_data='help')
-            ],[
-            InlineKeyboardButton('↩ ʙᴀᴄᴋ', callback_data='start')
-            ]]
+    await query.message.edit_media(
+        media=InputMediaPhoto(
+            media="https://i.ibb.co/kBChbPt/about.jpg",  # Replace with your own image
+            caption=script.ABOUT_TXT,
+            parse_mode="html"
         ),
-        disable_web_page_preview=True 
-
-)
-
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ❓', callback_data='help')],
+                [InlineKeyboardButton('↩ ʙᴀᴄᴋ', callback_data='start')]
+            ]
+        )
+    )
