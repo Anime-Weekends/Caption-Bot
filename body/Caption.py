@@ -22,14 +22,12 @@ async def strtCap(bot, message):
         "CAACAgUAAxkBAAEOXBhoCoKZ76jevKX-Vc5v5SZhCeQAAXMAAh4KAALJrhlVZygbxFWWTLw2BA"
     ]
 
-    await bot.send_chat_action(message.chat.id, "typing")
     msg = await message.reply_text(welcome_text)
     await asyncio.sleep(0.1)
     await msg.edit_text("<b><i><pre>Sᴛᴀʀᴛɪɴɢ...</pre></i></b>")
     await asyncio.sleep(0.1)
     await msg.delete()
 
-    await bot.send_chat_action(message.chat.id, "choose_sticker")
     await message.reply_sticker(random.choice(stickers))
 
     user_id = int(message.from_user.id)
