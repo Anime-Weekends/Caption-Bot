@@ -9,6 +9,7 @@ from pyrogram.types import *
 import asyncio
 import random
 from pyrogram.types import InputMediaPhoto
+from pyrogram.enums import ParseMode
 
 # ========================================                               
 #             𝗦𝗧𝗔𝗥𝗧 𝗖𝗢𝗠𝗠𝗔𝗡𝗗    
@@ -234,7 +235,7 @@ async def start(bot, query):
         media=InputMediaPhoto(
             media="",  # Replace with your own image
             caption=script.START_TXT.format(query.from_user.mention),
-            parse_mode="html"
+            parse_mode=ParseMode.HTML
         ),
         reply_markup=InlineKeyboardMarkup(
             [
@@ -252,9 +253,9 @@ async def start(bot, query):
 async def help(bot, query):
     await query.message.edit_media(
         media=InputMediaPhoto(
-            media="https://i.ibb.co/fYMxrHQ/photo-2025-04-29-16-45-17-7498777191010795536.jpg",
+            media="https://i.ibb.co/nM1fxK31/photo-2025-04-29-17-47-11-7498793142519332880.jpg",
             caption=script.HELP_TXT,
-            parse_mode="html"
+            parse_mode=ParseMode.HTML
         ),
         reply_markup=InlineKeyboardMarkup(
             [
@@ -269,9 +270,9 @@ async def help(bot, query):
 async def about(bot, query):
     await query.message.edit_media(
         media=InputMediaPhoto(
-            media="https://i.ibb.co/kBChbPt/about.jpg",  # Replace with your own image
+            media="https://i.ibb.co/nM1fxK31/photo-2025-04-29-17-47-11-7498793142519332880.jpg",  # Replace with your own image
             caption=script.ABOUT_TXT,
-            parse_mode="html"
+            parse_mode=ParseMode.HTML
         ),
         reply_markup=InlineKeyboardMarkup(
             [
