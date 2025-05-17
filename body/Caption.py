@@ -233,7 +233,7 @@ from pyrogram.types import InputMediaPhoto
 async def start(bot, query):
     await query.message.edit_media(
         media=InputMediaPhoto(
-            media="",  # Replace with your own image
+            media="https://i.ibb.co/nshhg1Zp/photo-2025-02-27-10-15-04-7481728210955141136.jpg",  # Replace with your own image
             caption=script.START_TXT.format(query.from_user.mention),
             parse_mode=ParseMode.HTML
         ),
